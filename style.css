@@ -1,0 +1,60 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #f8f9fa;
+}
+.navbar-brand, .nav-link {
+    font-weight: 500;
+}
+/*Logo IFCE*/
+.navbar-img{
+    height: 40px;
+}
+/* Estilo para o carrossel em tela cheia (com margem para a navbar) */
+.carousel {
+    min-height: calc(100vh - 56px); /* 56px é uma estimativa para a altura da navbar */
+    margin-top: 56px;
+}
+.carousel-item {
+    height: calc(100vh - 56px);
+}
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+/* Contêiner com gradiente para as imagens */
+.image-gradient-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.image-gradient-overlay::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%; /* Altura do gradiente, pode ser ajustado */
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 50%, transparent 100%);
+    z-index: 1;
+}
+/* Garantindo que a legenda do carrossel fique acima do gradiente */
+.carousel-caption {
+    z-index: 2;
+}
+.section-padding {
+    padding: 3rem 0;
+}
+
+.btn {
+    margin: 15px 0 0 0;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+
+.texto{
+    position: absolute;
+    top: 40%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
