@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
     background-color: #f8f9fa;
 }
 .navbar-brand, .nav-link {
@@ -33,8 +40,8 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 80%; /* Altura do gradiente, pode ser ajustado */
-    background: linear-gradient(to top, rgba(0,0,0,0.7) 50%, transparent 100%);
+    height: 100%; /* Altura do gradiente, pode ser ajustado */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 100%, transparent 100%);
     z-index: 1;
 }
 /* Garantindo que a legenda do carrossel fique acima do gradiente */
@@ -46,15 +53,29 @@ body {
 }
 
 .btn {
-    margin: 15px 0 0 0;
+    background-color: #2E7D32;
+    border: #1B5E20;
+    margin: 10px 0 0 0;
     border-radius: 50px;
     padding: 10px 30px;
+    transition: 0.3s; /* Deixa a transição suave */
 }
 
+.btn:hover {
+    background-color: #1B5E20; /* Azul ao passar o mouse */
+    cursor: pointer; /* Mostra a "mãozinha" */
+  }
+
 .texto{
+    font-size: 18px; 
     position: absolute;
     top: 40%;
     display: block;
     margin: auto;
     text-align: center;
 }
+
+h1{
+    font-size: 50px;
+  }
+
